@@ -32,8 +32,8 @@ class WeatherViewController: UIViewController {
         searchTextField.delegate = self
     }
     
-    @IBAction func currentLocationButton(_ sender: UIButton) {
-        
+    @IBAction func locationPressed(_ sender: UIButton) {
+        locationManager.requestLocation()
     }
     
 }
@@ -115,6 +115,12 @@ extension WeatherViewController: CLLocationManagerDelegate {
          Since locations.last is an optional. In order to use it we should do an if let
          */
         if let location = locations.last {
+            
+            /*
+             So want to stop updating the location as soon as we got the location information
+             This allows us to call the locationManager.requestLocation() again in the future (i.e. when we press the current location icon)
+             */
+            locationManager.stopUpdatingLocation()
             let lat = location.coordinate.latitude
             let lon = location.coordinate.longitude
             weatherManager.fetchWeather(latitude: lat, longitude: lon)
