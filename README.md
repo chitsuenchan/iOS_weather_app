@@ -68,31 +68,28 @@ Project is completed.
 * User can use the search textbox to find weather information for a certain location
 * User can press enter or use the magnifind glass icon
 
-### Update weather icon based on location's weather 
+### Update weather image based on location's weather 
 
 <img src="ExampleScreenshots/weatherIconUpdate-1.jpg" height="500"><img src="ExampleScreenshots/weatherIconUpdate-2.jpg" height="500">
 
-* Logged in user will have a custom .XIB message cell compared to the sender
-* Custom cells will hide and display cell contents based on back-end logic
+* weather image will change depending on the weather data from https://openweathermap.org/
+* For example, if its cloudy at that location it will show a cloudy image
 
 ### Ask for user's current location
 
-<img src="ExampleScreenshots/example-chatWindow-scrollableList.jpg" height="500">
+<img src="ExampleScreenshots/askForCurrentLocation.jpg" height="500">
 
-* User can scroll up for previous messages
-* Messages are ordered based on the message created timestamp
+* Prompts the user to give permission to provide current location
 
 ### Reset weather to user's current location
 
-<img src="ExampleScreenshots/example-chatWindow-cloudMessages.jpg" height="500">
+<img src="ExampleScreenshots/getCurrentLocation.jpg" height="500">
 
-* When the user open the chatView it will trigger code to fetch the messages stored in the Cloud Firebase FireStore
-* The cloud messages will provide data to the front-end such as sender, receipient, text message, timestamp
+* User can reset the weather to their current location
 
 # Installation <a name="installation"></a>
 * Ensure XCode is installed (only available on MacOS)
-* Install the 3rd party pods by executing in terminal "pod install" in the project directory
 
 # Execution <a name="execution"></a>
-* Open the "Flash Chat iOS13.xcworkspace" file in XCode
+* Open the "Clima.xcodeproj" file in XCode
 * Once the project is open you can click the play button at the top of the IDE to run the iPhone simulator or use a physical device
