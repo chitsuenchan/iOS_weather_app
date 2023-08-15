@@ -1,4 +1,4 @@
-# WhatsApp Copy - FlashChat App
+# Weather App
 <img src="ExampleScreenshots/example-homeScreen.jpg" height="500"><img src="ExampleScreenshots/example-login.jpg" height="500"><img src="ExampleScreenshots/example-chatView.jpg" height="500">
 
 **Table of Contents**
