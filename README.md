@@ -1,5 +1,5 @@
 # Weather App
-<img src="ExampleScreenshots/lightmode.jpg" height="500"><img src="ExampleScreenshots/darkmode.jpg" height="500"><img src="ExampleScreenshots/hongKong.jpg" height="500">
+<img src="ExampleScreenshots/hongKong.jpg" height="500"><img src="ExampleScreenshots/lightmode.jpg" height="500"><img src="ExampleScreenshots/darkmode.jpg" height="500">
 
 **Table of Contents**
 - [Introduction](#introduction)
